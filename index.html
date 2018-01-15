@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Mika the Whippet</title>
+</head>
+<body>
+<section class="main">
+<header>
+  <div class="container">
+  <div class="logo"><img src="assets/logo.white.png" alt=""></div>
+  <nav class="navbar-links">
+    <ul>
+      <li><a href="#">home  <i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/mika_whippet/">follow  <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a class="modal-open">contanct  <i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+    </ul>
+  </nav>
+  </div>
+</header>
+
+<div id="move">
+<ul id="scene" 
+      data-invert-x="false" 
+      data-invert-y="false"
+      data-scalar-x="7"
+      data-scalar-y="7"
+      data-friction-x="0.1"
+      data-friction-y="0.1"
+      data-origin-x="0.5"
+      data-origin-y="5">
+  <li class="layer name" data-depth="0.9">Mika</li>
+  <li class="layer note" data-depth="0.5">a whippet in Toronto</li>
+</ul>
+</div>
+</section>
+<section>
+  <div class="container">
+    
+  </div>
+</section>
+<section class="container-insta">
+  <div id="instafeed"></div>
+</section>
+<footer>
+<button class="modal-open button">Contact Form</button>
+<div id="simpleModal" class="modal">
+  <div class="modal-content">
+    <span class="closeBtn">&times;</span>
+    <p>Add Contact form Here</p>
+  </div>
+</div>
+</footer>
+<script src="script/jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script type="text/javascript" src="script/instafeed.min.js"></script>
+<script src="script/app.js"></script>
+</body>
+</html>
