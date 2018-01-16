@@ -1,7 +1,8 @@
 Mika the Whippet
 ================
 
-* Header - jQuery
-* Contact Modal - HTML/CSS/JavaScript
+* Header Nav - jQuery
+* Header Animations - [animate.css](https://daneden.github.io/animate.css/)
+* Contact Modal and Mobile Slide Menu - HTML/CSS/JavaScript
+* Contact form [formspree.io](https://formspree.io/) sent through AJAX using jQuery
 * Instagram feed from [instafeedjs.com](http://www.instafeedjs.com)
-* Parallax from [http://matthew.wagerfield.com/parallax/](http://matthew.wagerfield.com/parallax/)

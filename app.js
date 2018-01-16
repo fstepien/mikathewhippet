@@ -1,11 +1,3 @@
-document.body.classList.add('js-loading');
-
-window.addEventListener("load", showPage);
-
-function showPage() {
-  document.body.classList.remove('js-loading');
-}
-
 $(document).ready(function() {
 
     var $header = $('header');
@@ -104,8 +96,6 @@ function closeSlideMenu(){
 //   document.querySelector('.alert').style.display = "block";
 //   document.getElementById('contact-form').reset();
 // }
-
-// ------Ajax submit using jQuery -----
 
 $(document).ready(function() {
 
