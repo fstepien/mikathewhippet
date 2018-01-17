@@ -76,59 +76,60 @@ function closeSlideMenu(){
   slideMenu.style.display = "none"; 
 }
 
-// // FORM ALERT
-// document.getElementById('contact-form').addEventListener('submit', submitForm);
+// // FORM ALERT converted to vanilla JS
+document.getElementById('contact-form').addEventListener('submit', submitForm);
 
 
 
-// function submitForm(e){
+function submitForm(e){
 
-//   e.preventDefault();
+  e.preventDefault();
 
-//   var name = document.getElementById('name').value;
-//   var email = document.getElementById('email').value;
-//   var message = document.getElementById('message').value;
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
 
-//   let rawData = {
-//     name:name,
-//     email:email,
-//     comments:message,
-//     _subject:'MikaTheWhippet.com form Submission'
-//   }
-//   data = JSON.stringify(rawData)
-//   console.log(data);
-//   let formSend = new XMLHttpRequest();
-//   formSend.open('POST', 'https://formspree.io/mika.whippet@gmail.com', true);
-//   formSend.setRequestHeader('accept', 'application/json');
-//   formSend.send(data);
-//   document.querySelector('.alert').style.display = "block";
-//   document.getElementById('contact-form').reset();
-// }
+  let rawData = {
+    name:name,
+    email:email,
+    comments:message,
+    _subject:'MikaTheWhippet.com form Submission'
+  }
+  data = JSON.stringify(rawData)
+  console.log(data);
+  let formSend = new XMLHttpRequest();
+  formSend.open('POST', 'https://formspree.io/mika.whippet@gmail.com', true);
+  formSend.setRequestHeader('Content-type', 'application/json');
+  formSend.send(data);
 
-// ------Ajax submit using jQuery -----
+  document.querySelector('.alert').style.display = "block";
+  document.getElementById('contact-form').reset();
+}
 
-$(document).ready(function() {
+// ------Ajax submit using jQuery from formspree example -----
 
-  $('#contact-form').on('submit', function submitform(e){
-    e.preventDefault();
-    var name = $('#name').val();
-    var email = $('#email').val();
-    var comments = $('#message').val();
-    $.ajax({
-        url:'https://formspree.io/mika.whippet@gmail.com',
-        method:'POST',
-        data:{
-            name:name,
-            email:email,
-            comments:comments,
-            _subject:'My Form Submission',
-        },
-        dataType:"json", 
+// $(document).ready(function() {
+
+//   $('#contact-form').on('submit', function submitform(e){
+//     e.preventDefault();
+//     var name = $('#name').val();
+//     var email = $('#email').val();
+//     var comments = $('#message').val();
+//     $.ajax({
+//         url:'https://formspree.io/mika.whippet@gmail.com',
+//         method:'POST',
+//         data:{
+//             name:name,
+//             email:email,
+//             comments:comments,
+//             _subject:'My Form Submission',
+//         },
+//         dataType:"json", 
   
-    }); 
-    $('.alert').css('display','block');
-    $('#contact-form').trigger("reset");
-});
+//     }); 
+//     $('.alert').css('display','block');
+//     $('#contact-form').trigger("reset");
+// });
 
 
-});
+// });
